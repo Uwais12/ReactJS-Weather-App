@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+  color: white;
+  /* overflow-x: hidden; */
+  overflow: scroll;
+  
+}
+
+.container {
+  background-image: url('./18.png');
+  /* background-color: rgba(1, 1, 88); */
+
+  overflow: hidden;
+
+  overflow: auto;
+  height: calc(100vh);
+
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 550px;
+  /* align-items: center; */
+  /* align-content: center; */
+  /* justify-items: center; */
+}
+/* .container { 
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/clear-iphone.jpg');
+	color: #fff;
+	
+	text-align: center;
+	padding-top: 80px;
+	margin: 0 auto;
+} */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.25em;
+  margin: 1em;
+  /* border: 1px solid steelblue; */
+}
+
+.currentWeather{
+  padding: 0.5em;
+  text-align: center;
+  margin-right: 1em;
+  /* width: 50%; */
+}
+.hourlyWeather{
+  /* background-image: url("./rain.gif"); */
+  /* width: 65%; */
+  border-radius: 10px;
+  padding: 0.25em;
+  background-color: rgba(245, 245, 245, 0.315);
+  display: flex;
+  overflow: scroll;
+  /* font-size: px; */
+}
+.hourlyWeather2{
+  /* */
+  
+  /* background-color: rgba(255, 255, 255, 0.295); */
+  padding: 1em;
+  margin: auto;
+  border-radius: 15px;
+  width: 90%;
+  border-radius: 10px;
+  /* padding: 0.25em; */
+  /* background-color: rgba(245, 245, 245, 0.315); */
+  display: flex;
+  overflow: scroll;
+  /* font-size: px; */
+}
+.hourInfo{
+  /* border: 3pt solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 33%;
+  margin: 0.5em;
+  /* overflow: scroll; */
+  /* font-size: 10  px; */
+
+}
+.hourInfo2{
+  /* border: 3pt solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 33%;
+  margin: 0.5em;
+  /* font-size: 10  px; */
+
+}
+.footerBack{
+  width:100%;
+  max-width: 560px;
+  background-color: rgb(44, 51, 148);
+  height: 7em;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt;
+  padding-left: 1.25em;
+
+
+}
+.footer {
+  margin-top: 2em;
+  border-radius: 25px;
+  height: 3em;
+  padding: 1em;
+  align-items: center;
+  background-color:white;
+  color: rgb(1, 1, 88);
+  width: calc(100% - 5em);
+  overflow: scroll;
+  /* min-height: 5em; */
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(560px - 3em);
+
+
+  /* width:.container; */
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0pt;
+  /* left: ; */
+
+
+}
+
+.time{
+  /* height: ; */
+  /* border: 3pt solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+.desc{
+  font-size: 10px;
+}
+
+/* .btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+} */
+.btn{
+  /* display: inline-block; */
+  background: #fff;
+  color: rgb(1, 1, 88);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  /* font-weight: 1000; */
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.info-card{
+  background-color: rgba(255, 255, 255, 0.295);
+  padding: 1em;
+  margin: 1em;
+  border-radius: 15px;
+  overflow: scroll;
+}
+
+.activities{
+  display: flex;
+  overflow: scroll;
+  /* margin: 1em; */
+}
+
+.activity{
+  margin-right: 1em;
+  min-width: 7em;
+}
+
+.activityName{
+  font-size: small;
+  max-width: 15ch;
+  overflow: hidden;
+
+}
+
+.activityDist{
+  max-width: 5ch;
+  overflow: hidden;
+
+
+}
+
+.currWeather{
+  display: flex;
+  justify-content: center;
+
+  /* align-items: ce; */
+
+}
+
+.currWeather > h1{
+
+  margin-right: 10px;
+}
+
+.sideBar{
+  /* border: 3pt solid red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+
+  padding-left: 1em;
+  padding-right: 1em;
+width: 15em;
+  justify-content: space-between;
+}
+
+ul > li:hover{
+  color: blue;
+}
+
+#df{
+  overflow: scroll;
+}
+
+a{
+  text-decoration: none;
+}
+
+.dailyInfo{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.247);
+  padding: 1em;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.dailyInfo>div{
+  text-align: end;
+}
+
+.side{
+  font-size: 12px;
+  /* margin-bottom: 1em;
+  margin-top: 1em; */
+}
+
+.news{
+  margin-top: 1em;
+  margin-bottom: 2em;
+
+  /* border: 3pt solid red; */
+  max-height: 80%;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+
+  
+}
+
+#newsSection{
+  margin-top: 2.5em;
+  max-height: 87%;
+  overflow: scroll;
+
+  /* border: 3pt solid green; */
+  padding-left: 2em;
+  padding-right: 2em;
+  
+}
+
+.newsCard{
+
+  margin-bottom: 3em;
+  /* margin-left: 1em;
+  margin-right: 1em; */
+}
+
+.title{
+  margin-bottom: 1em;
+}
+
+
+
+.dailyForecast{
+  /* background-image: url("./rain.gif"); */
+  /* max-height: 30em; */
+
+  overflow: scroll;
+  max-height: 30em;
+  /* margin-bottom: 20em; */
+}
+
+.dailyForecast:last-child{
+  margin-bottom: 10em;
+}
+
+.sun{
+  background-image: url("./sun.gif");
+}
+
+.rain{
+  background-image: url("./rain.gif");
+}
+
+.notShown{
+  display: none;
+}
+#citySuggestion{
+  background: white;
+  width: fit-content;
+  color: blue;
+  padding: 0.25em;
+  margin-top: 0.2em;
+}
+#citySuggestButton{
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+#citySuggestButton:hover{
+  color: red;
+}
+
+#dITitle{
+  margin-bottom: 1em;
+}
+
+#search{
+  font-size: 20px;
+  width: calc(100% - 3em);
+  /* border: 3pt solid red; */
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#searchCity{
+  font-size: 20px;
+  height: 2em;
+  padding-left: 1em;
+  width: calc(100% - 2em);
+
+  border-radius: 10px;
+  /* border: 3pt solid red; */
+}
+
+.searchBar{
+  /* border: 3pt solid red; */
+  width: 90%;
+}
+
+#search>div>button{
+  height: 3em;
+  /* padding: 1em; */
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 10px;
+}
+
+.actsInfo{
+  margin-bottom: 10em ;
+}
