@@ -1,4 +1,7 @@
-# Installing Dependencies
+# Weather App
+Made using ReactJS
+
+## Installing Dependencies
 
 To install the required dependencies, open a terminal in the root folder and run the command: `npm install`
 
